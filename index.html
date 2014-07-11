@@ -11,8 +11,10 @@
 	    <link rel="stylesheet" href="./css/egsa-custom.css">
 	</header>
 	<body>
-		<div class="container-fluid">
-			<!-- NAVIGATION BAR ===================== -->
+		<div class="container-fluid" style="padding-top:50px;"> <!-- Correction due to floating navbar -->
+
+			<!-- Navigation bar
+		    ================================================== -->
 			<div class="navbar-wrapper">
 			  <div class="container">
 			    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -31,7 +33,7 @@
 			            <li><a href="#">Home</a></li>
 			            <li><a href="#about">Who?</a></li>
 			            <li><a href="#contact">Contact</a></li>
-			            <li><a href="#" onclick="alert('Were you go cupcake? We are working on that!');">Blog</a></li>
+			            <li><a href="#" onclick="alert('Where you go cupcake? We are working on that!');">Blog</a></li>
 			          </ul>
 			        </div>
 			      </div>
@@ -57,7 +59,7 @@
 		          <div class="container">
 		            <div class="carousel-caption">
 		              <h1>Join us on Grooveshark!</h1>
-		              <p class="p-content">Our members broadcast every day from Monday to Friday. We host events from time to time with general themes (like "Weird Wednesday " each Wednesday), so just search for [EGSA] tagged broadcasts on Grooveshark and join the chaos!</p>
+		              <p class="content">Our members broadcast every day from Monday to Friday. We host events from time to time with general themes (like "Weird Wednesday " each Wednesday), so just search for [EGSA] tagged broadcasts on Grooveshark and join the chaos!</p>
 		              <p><a class="btn btn-lg btn-primary" href="http://grooveshark.com/#!/broadcasts" role="button">Check online broadcasts</a></p>
 		            </div>
 		          </div>
@@ -67,7 +69,7 @@
 		          <div class="container">
 		            <div class="carousel-caption">
 		              <h1>Be sure to check our Tumblr!</h1>
-		              <p class="p-content">Enjoy the best and funniest stuff from around the Internet on our Tumblr! Mostly related to games, anime, and TV shows :)</p>
+		              <p class="content">Enjoy the best and funniest stuff from around the Internet on our Tumblr! Mostly related to games, anime, and TV shows :)</p>
 		              <p><a class="btn btn-lg btn-primary" href="http://epicgsa.tumblr.com/" role="button">Take me there!</a></p>
 		            </div>
 		          </div>
@@ -77,7 +79,7 @@
 		          <div class="container">
 		            <div class="carousel-caption">
 		              <h1>Join the EGSA army!</h1>
-		              <p class="p-content">Be part of the greatest Steam group of all time! Participate in our gaming events, share your handle/tag/ID for other platforms, and share info. about any other things you like! Game-related nice, but not always required.</p>
+		              <p class="content">Be part of the greatest Steam group of all time! Participate in our gaming events, share your handle/tag/ID for other platforms, and share info. about any other things you like! Game-related nice, but not always required.</p>
 		              <p><a class="btn btn-lg btn-primary" href="http://steamcommunity.com/groups/egsa" role="button">Where do I sign?</a></p>
 		            </div>
 		          </div>
@@ -89,13 +91,14 @@
 
 
 			<div class="row">
-				<div id="about" style="margin-top:-120px;height:1px;"></div>
 				<div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
+					<h1 id="about">Who we are?</h1>
+					<br/><br/>
 					<p class="important">
 						EGSA stands for Epic Grooveshark Assembly. We are a group of lovely people from several countries who have many things in common: musical taste, video games, nostalgia, a deep and abiding love for many things caffeinated...
-
+						<br/><br/>
 						EGSA was founded at some forgotten, informal date between July and October 2013 after Nikke (a.k.a. the Unperturbed) couldn't host his "VGM Music" broadcast. A splinter broadcast was established to keep the music coming and the chats flowing. Once Nikke was back, the group stayed together, some members floating back and forth, but most of us staying put. Currently EGSA celebrates its anniversary on August 15. 
-
+						<br/><br/>
 						We have between 30 and 40 “members” from several countries across North and South America, Europe, and Asia.
 					</p>
 				</div>
@@ -103,9 +106,9 @@
 
 
 
-			<div id="contact" class="row row-orange">
+			<div id="contact" class="row row-small row-orange">
 				<div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
-					<h2>Contact Us!</h2>
+					<h1>Contact Us!</h1>
 					<br/>
 					<p>
 						If you have any suggestion, question, or greeting, don't be shy and send us an e-mail
@@ -115,12 +118,17 @@
 				</div>
 			</div>
 
-			<footer class="col-md-8 col-md-offset-2">
-				<p class="pull-right"><a href="#">Back to top</a></p>
-		        <p>&copy; 2014 Epic Grooveshark Assembly &middot; <strong>pls no copy pasterino</strong>
-		          &middot; <a href="http://creativecommons.org/licenses/by/3.0/">CC Licence 3.0</a>
-		          &middot; <a href="http://glyphicons.com/">Glyphicons</a>
-		        </p>
+			<footer>
+				<div class="col-md-8 col-md-offset-2">
+					<p class="pull-right"><a href="#">Back to top</a></p>
+			        <p>
+			        	&copy; 2014 Epic Grooveshark Assembly &middot; <strong>pls no copy pasterino</strong>
+			        	<br/>
+			        	<a href="http://creativecommons.org/licenses/by/3.0/">CC Licence 3.0</a>
+			        	<br/>
+			        	<a href="http://glyphicons.com/">Glyphicons</a>
+			        </p>
+		        </div>
 			</footer>
 		</div>
 
@@ -135,8 +143,7 @@
 		              $('#btn-up').stop().animate({
 		                  right: '-55px'    
 		                  }, 500);
-		          }
-		          else{
+		          } else {
 		              $('#btn-up').stop().animate({
 		                 right: '-155px'    
 		              }, 500);
