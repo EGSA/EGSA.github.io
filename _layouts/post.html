@@ -1,0 +1,22 @@
+---
+layout: default
+---
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<article>
+					        <header>
+					        	<div class="page-header">
+					            	<h2>{{ page.title }}<small> by {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} ,on <time>{{page.date|date:"%b %d, %Y"}}</time></small></h2>
+					            </div>
+					            <span><i class="icon-clock"></i><time datetime="{{page.date|date:"%F"}}"></time></span><br/>
+					        </header>
+
+					        <div class="entry">{{ content }}</div>
+
+					        <hr>
+					        <p class="text-left text-muted"><span class="glyphicon glyphicon-tags"></span>&nbsp;Category: <span class="label label-primary">{{ page.categories | category_links }}</span></span><br/>
+					</article>
+				</div>
+			</div>
+
+

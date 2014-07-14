@@ -2,7 +2,6 @@ name: EGSA:EPIC_GROOVESHARK_ASSEMBLY
 author: EGSA-tan
 author_email: EGSA@mail.com
 permalink: pretty
-paginate: 5
-paginate_path: "blog/page:num"
+paginate: 3
 timezone: GMT
 encoding: utf-8

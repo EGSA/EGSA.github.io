@@ -1,48 +1,9 @@
-<html>
-	<header>
-		<title>EGSA:EPIC_GROOVESHARK_ASSEMBLY</title>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="description" content="EGSA Epic Grooveshark Assembly Webpage">
-	    <meta name="author" content="Deku <github.com/Deku>">
+---
 
-	    <link rel="stylesheet" href="./css/bootstrap.min.css">
-	    <link rel="stylesheet" href="./css/egsa-custom.css">
-	</header>
-	<body>
-		<div class="container-fluid" style="padding-top:50px;"> <!-- Correction due to floating navbar -->
+layout: default
+title: Home
 
-			<!-- Navigation bar
-		    ================================================== -->
-			<div class="navbar-wrapper">
-			  <div class="container">
-			    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			      <div class="container">
-			        <div class="navbar-header">
-			          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			            <span class="sr-only">Toggle navigation</span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			          </button>
-			          <a class="navbar-brand" href="#"></a>
-			        </div>
-			        <div class="navbar-collapse collapse">
-			          <ul class="nav navbar-nav">
-			            <li><a href="#">Home</a></li>
-			            <li><a href="#about">Who?</a></li>
-			            <li><a href="#contact">Contact</a></li>
-			            <li><a href="#" onclick="alert('Where you go cupcake? We are working on that!');">Blog</a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- Fancy go-to-top button -->
-			<a id="btn-up">UP!</a>
-
+---
 
 			<!-- Carousel
 		    ================================================== -->
@@ -117,48 +78,3 @@
 					</p>
 				</div>
 			</div>
-
-			<footer>
-				<div class="col-md-8 col-md-offset-2">
-					<p class="pull-right"><a href="#">Back to top</a></p>
-			        <p>
-			        	&copy; 2014 Epic Grooveshark Assembly &middot; <strong>pls no copy pasterino</strong>
-			        	<br/>
-			        	<a href="http://creativecommons.org/licenses/by/3.0/">CC Licence 3.0</a>
-			        	<br/>
-			        	<a href="http://glyphicons.com/">Glyphicons</a>
-			        </p>
-		        </div>
-			</footer>
-		</div>
-
-		<!-- SCRIPTS SECTION ===================== -->
-		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			/* THE MIGHTY UP! BUTTON */
-			$(document).ready(function() {
-		      $(window).scroll(function() {
-		          if($(this).scrollTop() > 100){
-		              $('#btn-up').stop().animate({
-		                  right: '-55px'    
-		                  }, 500);
-		          } else {
-		              $('#btn-up').stop().animate({
-		                 right: '-155px'    
-		              }, 500);
-		          }
-		      });
-		      $('#btn-up').click(function() {
-		          $('html, body').stop().animate({
-		             scrollTop: 0
-		          }, 500, function() {
-		             $('#btn-up').stop().animate({
-		                 right: '-155px'    
-		             }, 500);
-		          });
-		      });
-		    });
-		</script>
-	</body>
-</html>

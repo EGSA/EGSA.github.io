@@ -21,12 +21,12 @@ footer {
 	position: fixed;
 	right: -155px;
 	top: 100px;
-	padding: 50px 65px 50px 30px;
+	padding: 40px 54px 40px 20px;
 	background-color: rgba(211, 125, 72, 0.4);
 	border-radius: 100px;
 	text-decoration: none;
 	font-weight: bolder;
-	color: rgb(144, 88, 49);
+	color: #FFF;
 	z-index: 9999;
 }
 
