@@ -1,8 +1,10 @@
 /* General */
 body { padding-bottom: 40px; }
 
+dt, dd { margin-top: 1em; }
+
 p.important {
-	font-size: 18px;
+	font-size: 1.2em;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1); 
 }
 
@@ -42,7 +44,7 @@ footer {
 .carousel-caption p { 
 	padding: 1em 0; 
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 1.2em;
 	line-height: 1.4;
 }
 
@@ -94,8 +96,8 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-	body { font-size: 10px; }
-	footer { font-size: 8px; }
-	h1 { font-size: 24px; }
-	p.important, .carousel-caption p  { font-size: 12px; }
+	body { font-size: 1em; }
+	footer { font-size: 0.8em; }
+	h1 { font-size: 2em; }
+	p.important, .carousel-caption p  { font-size: 1em; }
 }
