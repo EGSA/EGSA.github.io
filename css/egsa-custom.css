@@ -67,6 +67,11 @@ footer {
   height: 500px;
 }
 
+.egsa-logo {
+	width: 100%;
+	margin-top:3em;
+}
+
 /* Override nav links color */
 .navbar-inverse .navbar-nav > li > a { color: #CCC !important; }
 
@@ -75,9 +80,9 @@ footer {
 	min-height: 500px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	-webkit-box-shadow: inset 0px 6px 13px -4px rgba(0,0,0,0.41);
-	-moz-box-shadow: inset 0px 6px 13px -4px rgba(0,0,0,0.41);
-	box-shadow: inset 0px 6px 13px -4px rgba(0,0,0,0.41);
+	-webkit-box-shadow: inset 0px 1px 10px -4px rgba(0,0,0,0.41);
+	-moz-box-shadow: inset 0px 1px 10px -4px rgba(0,0,0,0.41);
+	box-shadow: inset 0px 1px 10px -4px rgba(0,0,0,0.41);
 }
 
 .row-small {
@@ -96,8 +101,50 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-	body { font-size: 1em; }
+	body { font-size: 16px; }
 	footer { font-size: 0.8em; }
 	h1 { font-size: 2em; }
 	p.important, .carousel-caption p  { font-size: 1em; }
+}
+
+
+/* FANCY STUFF (Animations)
+-------------------------------------------------- */
+
+/* Megaman 8-bit standing */
+.megaman-standing {
+	width: 128px;
+	height: 128px;
+	background-image: url("../img/megaman-8bit-sequence.png");
+
+	-webkit-animation: play .8s steps(3) infinite;
+	-moz-animation: play .8s steps(3) infinite;
+	-ms-animation: play .8s steps(3) infinite;
+	-o-animation: play .8s steps(3) infinite;
+	animation: play .8s steps(3) infinite;
+}
+
+@-webkit-keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -384px; }
+}
+
+@-moz-keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -384px; }
+}
+
+@-ms-keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -384px; }
+}
+
+@-o-keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -384px; }
+}
+
+@keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -384px; }
 }
