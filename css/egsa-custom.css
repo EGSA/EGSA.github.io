@@ -96,7 +96,9 @@ footer {
 
 .row-green { background-color: rgba(11, 190, 132, 1); }
 
-.inverse, .inverse a:link, .inverse a:active { color: #FFE4BA; }
+.inverse { color: #FFF; } 
+
+.inverse a:link, .inverse a:active { color: #FFE4BA; }
 
 .inverse a:hover, .inverse a:visited { color: #FFBE57; }
 
