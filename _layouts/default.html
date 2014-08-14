@@ -1,100 +1,177 @@
 <html>
 	<header>
-		<title>{% if page.title %} {{ page.title }} | {% endif %} EGSA:EPIC_GROOVESHARK_ASSEMBLY</title>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="EGSA Epic Grooveshark Assembly Webpage">
 	    <meta name="author" content="Deku <github.com/Deku>">
+	    <title>{% if page.title %} {{ page.title }} | {% endif %} EGSA:EPIC_GROOVESHARK_ASSEMBLY</title>
 
 	    <link rel="stylesheet" href="{{site.baseurl}}css/bootstrap.min.css">
 	    <link rel="stylesheet" href="{{site.baseurl}}css/egsa-custom.css">
+	    <link rel="stylesheet" href="{{site.baseurl}}css/animate.css">
+	    <link rel="stylesheet" href="{{site.baseurl}}css/font-awesome.min.css">
+	    <link rel="stylesheet" href="{{site.baseurl}}css/main.css">
+	    <link rel="stylesheet" href="{{site.baseurl}}css/prettyPhoto.css">
+	    <!--[if lt IE 9]>
+	    <script src="{{site.baseurl}}js/html5shiv.js"></script>
+	    <script src="{{site.baseurl}}js/respond.min.js"></script>
+	    <![endif]-->
 	</header>
 	<body>
-		<header>
-			<!-- Navigation bar
+
+		<!-- Navigation bar
 		    ================================================== -->
-			<div class="navbar-wrapper">
-			  <div class="container">
-			    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			      <div class="container">
-			        <div class="navbar-header">
-			          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			            <span class="sr-only">Toggle navigation</span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			          </button>
-			          <a class="navbar-brand" href="#"></a>
-			        </div>
-			        <div class="navbar-collapse collapse">
-			          <ul class="nav navbar-nav">
-			            <li><a href="{{site.baseurl}}#">Home</a></li>
-			            <li><a href="{{site.baseurl}}#about">Who?</a></li>
-			            <li><a href="{{site.baseurl}}#contact">Contact</a></li>
-			            <li><a href="{{site.baseurl}}blog/">Blog</a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
+		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="{{site.baseurl}}#"></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{{site.baseurl}}#">Home</a></li>
+						<li><a href="{{site.baseurl}}#about">Who?</a></li>
+						<li><a href="{{site.baseurl}}contact/">Contact</a></li>
+						<li><a href="{{site.baseurl}}blog/">Blog</a></li>
+					</ul>
+				</div>
 			</div>
-			<!-- Fancy go-to-top button -->
-			<a id="btn-up">UP!&nbsp;</a>
 		</header>
 
 		<!-- Page Content
 		================================================== -->
-		<div class="container-fluid" style="padding-top:50px;" role="main"> <!-- Correction due to floating navbar -->
-
-			{{ content }}
-
-		</div>
+		{{ content }}
 		<!-- End of Page Content
 		================================================== -->
 
-		<footer>
-			<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
-				<p class="pull-right"><a href="#">Back to top</a></p>
-		        <p>
-		        	&copy; 2014 Epic Grooveshark Assembly &middot; <strong>pls no copy pasterino</strong>
-		        	<br/>
-		        	<a href="http://creativecommons.org/licenses/by/3.0/">CC Licence 3.0</a>
-		        	<br/>
-		        	<a href="http://glyphicons.com/">Glyphicons</a>
-		        </p>
+	    <section id="bottom" class="navbar-inverse">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-3 col-sm-6">
+	                    <h4>About Us</h4>
+	                    <p>EGSA stands for Epic Grooveshark Assembly. We are a group of lovely people from several countries who have many things in common: musical taste, video games, nostalgia, a deep and abiding love for many things caffeinated... </p>
+	                </div><!--/.col-md-3-->
+
+	                <div class="col-md-3 col-sm-6">
+	                    <h4>Links</h4>
+	                    <div>
+	                        <ul class="arrow">
+	                            <li><a href="http://grooveshark.com/#!/epicgroovesharkassembly/broadcast" target="_blank">Grooveshark</a></li>
+	                            <li><a href="http://epicgsa.tumblr.com/" target="_blank">Tumblr</a></li>
+	                            <li><a href="http://steamcommunity.com/groups/egsa" target="_blank">Steam Group</a></li>
+	                        </ul>
+	                    </div>
+	                </div><!--/.col-md-3-->
+
+	                <div class="col-md-3 col-sm-6">
+	                    <h4>Latest Blog</h4>
+	                    <div>
+	                        <div class="media">
+	                            <div class="pull-left">
+	                                <img src="images/blog/thumb1.jpg" alt="">
+	                            </div>
+	                            <div class="media-body">
+	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+	                                <small class="muted">Posted 17 Aug 2013</small>
+	                            </div>
+	                        </div>
+	                        <div class="media">
+	                            <div class="pull-left">
+	                                <img src="images/blog/thumb2.jpg" alt="">
+	                            </div>
+	                            <div class="media-body">
+	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+	                                <small class="muted">Posted 13 Sep 2013</small>
+	                            </div>
+	                        </div>
+	                        <div class="media">
+	                            <div class="pull-left">
+	                                <img src="images/blog/thumb3.jpg" alt="">
+	                            </div>
+	                            <div class="media-body">
+	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+	                                <small class="muted">Posted 11 Jul 2013</small>
+	                            </div>
+	                        </div>
+	                    </div>  
+	                </div><!--/.col-md-3-->
+
+	                <div class="col-md-3 col-sm-6">
+	                    <h4>Contact</h4>
+	                    <address>
+	                        EGSA@mail.com<br>
+	                        <strong>Devs</strong><br>
+	                        Deku: <a href="http://www.github.com/Deku">github.com/Deku</a><br>
+	                        Keith: <a href="http://www.github.com/Deku">github.com/karb0n13</a>
+	                    </address>
+	                </div> <!--/.col-md-3-->
+	            </div>
+	        </div>
+	    </section><!--/#bottom-->
+
+		<footer id="footer" class="navbar-inverse">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+	                    &copy; 2014 Epic Grooveshark Assembly. <strong>pls no copy pasterino</strong>. 
+	                </div>
+	                <div class="col-sm-6">
+	                    <ul class="pull-right">
+	                        <li><a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU GPL v2.0</a><li>
+	                        <li><a href="#">Back to top</a></li>
+	                    </ul>
+	                </div>
+		        </div>
 	        </div>
 		</footer>
 
 		<!-- SCRIPTS SECTION ===================== -->
-		<script type="text/javascript" src="{{site.baseurl}}js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="{{site.baseurl}}js/jquery.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			/*
-			** THE MIGHTY UP! BUTTON
-			*/
-			$(document).ready(function() {
-		      $(window).scroll(function() {
-		          if($(this).scrollTop() > 100){
-		              $('#btn-up').stop().animate({
-		                  right: '-55px'    
-		                  }, 500);
-		          } else {
-		              $('#btn-up').stop().animate({
-		                 right: '-155px'    
-		              }, 500);
-		          }
-		      });
-		      $('#btn-up').click(function() {
-		          $('html, body').stop().animate({
-		             scrollTop: 0
-		          }, 500, function() {
-		             $('#btn-up').stop().animate({
-		                 right: '-155px'    
-		             }, 500);
-		          });
-		      });
-		    });
-		</script>
+		<script type="text/javascript" src="{{site.baseurl}}js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="{{site.baseurl}}js/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="{{site.baseurl}}js/main.js"></script>
+		<script>
+            function sendMail() {
+                $.ajax({
+                    type: "POST",
+                    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                    data: {
+	                    'key': 'pJUXW9yAlOepYuEJkWVBJg',
+	                    'message': {
+	                      'from_email': 'EGSA@mail.com',
+	                      'to': [
+	                          {
+	                            'email': 'EGSA@mail.com',
+	                            'name': 'Epic Grooveshark Assembly',
+	                            'type': 'to'
+	                          },
+	                          {
+	                            'email': 'maangx@gmail.com',
+	                            'name': 'Deku',
+	                            'type': 'cc'
+	                          }
+	                        ],
+	                      'autotext': 'true',
+	                      'subject': 'EGSA Website Contact',
+	                      'html': 'Mail sent from Contact form at egsa.github.io <br> ----- <br>'
+	                      			+ 'First name: ' + $('#fname').val() + '<br>'
+	                      			+ 'Last name: ' + $('#lname').val()+ '<br>'
+	                      			+ 'Contact e-mail: ' + $('#cmail').val() + '<br><br>'
+	                      			+ '<br> ----- <br>Message: <br> ----- <br>'
+	                      			+ $('#message').val()
+	                    }
+                    }
+                }).done(function(response) {
+                	console.log(response); // if you're into that sorta thing
+                });
+            }
+        </script>
 	</body>
 </html>

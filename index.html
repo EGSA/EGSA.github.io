@@ -5,97 +5,117 @@ title: Home
 
 ---
 
-			<!-- Carousel
+			<!-- Main Slider
 		    ================================================== -->
-		    <div id="gs-crsl" class="carousel slide" data-ride="carousel">
-		      <!-- Indicators -->
-		      <ol class="carousel-indicators">
-		        <li data-target="#gs-crsl" data-slide-to="0" class="active"></li>
-		        <li data-target="#gs-crsl" data-slide-to="1"></li>
-		        <li data-target="#gs-crsl" data-slide-to="2"></li>
-		      </ol>
-		      <div class="carousel-inner">
-		        <div class="item active">
-		          <img src="./img/gs_crsl.png" alt="Grooveshark">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>Join us on Grooveshark!</h1>
-		              <p class="content">Our members broadcast every day from Monday to Friday. We host events from time to time with general themes (like "Weird Wednesday " each Wednesday), so just search for [EGSA] tagged broadcasts on Grooveshark and join the chaos!</p>
-		              <p><a class="btn btn-lg btn-primary" href="http://grooveshark.com/#!/broadcasts" role="button" target="_blank">Check online broadcasts</a></p>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <img src="./img/gs_crsl2.png" alt="Tumblr">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>Be sure to check our Tumblr!</h1>
-		              <p class="content">Enjoy the best and funniest stuff from around the Internet on our Tumblr! Mostly related to games, anime, and TV shows :)</p>
-		              <p><a class="btn btn-lg btn-primary" href="http://epicgsa.tumblr.com/" role="button" target="_blank">Take me there!</a></p>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <img src="./img/gs_crsl3.png" alt="Steam">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>Join the EGSA army!</h1>
-		              <p class="content">Be part of the greatest Steam group of all time! Participate in our gaming events, share your handle/tag/ID for other platforms, and share info. about any other things you like! Game-related nice, but not always required.</p>
-		              <p><a class="btn btn-lg btn-primary" href="http://steamcommunity.com/groups/egsa" role="button" target="_blank">Where do I sign?</a></p>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		      <a class="left carousel-control" href="#gs-crsl" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		      <a class="right carousel-control" href="#gs-crsl" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		    </div><!-- /.carousel -->
+		    <section id="main-slider" class="no-margin">
+		        <div class="carousel slide wet-asphalt">
+		            <ol class="carousel-indicators">
+		                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+		                <li data-target="#main-slider" data-slide-to="1"></li>
+		                <li data-target="#main-slider" data-slide-to="2"></li>
+		            </ol>
+		            <div class="carousel-inner">
+		                <div class="item active" style="background-image: url({{site.baseurl}}img/gs_crsl.png)">
+		                    <div class="container">
+		                        <div class="row">
+		                            <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+		                                <div class="carousel-content centered">
+		                                    <h2 class="boxed animation animated-item-1">Join us on Grooveshark!</h2>
+		                                    <p class="boxed animation animated-item-2">Our members broadcast every day from Monday to Friday. We host events from time to time with general themes (like "Weird Wednesday " each Wednesday), so just search for [EGSA] tagged broadcasts on Grooveshark and join the chaos!</p>
+		                                    <br>
+		                                    <a class="btn btn-md animation animated-item-3" href="http://grooveshark.com/#!/broadcasts" role="button" target="_blank">Check online broadcasts</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div><!--/.item-->
+		                <div class="item" style="background-image: url({{site.baseurl}}img/gs_crsl2.png)">
+		                    <div class="container">
+		                        <div class="row">
+		                            <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+		                                <div class="carousel-content center centered">
+		                                    <h2 class="boxed animation animated-item-1">Be sure to check our Tumblr!</h2>
+		                                    <p class="boxed animation animated-item-2">Enjoy the best and funniest stuff from around the Internet on our Tumblr! Mostly related to games, anime, and TV shows :)</p>
+		                                    <br>
+		                                    <a class="btn btn-md animation animated-item-3" href="http://epicgsa.tumblr.com/" role="button" target="_blank">Take me there!</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div><!--/.item-->
+		                <div class="item" style="background-image: url({{site.baseurl}}img/gs_crsl3.png)">
+		                    <div class="container">
+		                        <div class="row">
+		                            <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+		                                <div class="carousel-content centered">
+		                                    <h2 class="boxed animation animated-item-1">Join the EGSA army!</h2>
+		                                    <p class="boxed animation animated-item-2">Be part of the greatest Steam group of all time! Participate in our gaming events, share your handle/tag/ID for other platforms, and share info. about any other things you like! Game-related nice, but not always required.</p>
+		                                    <a class="btn btn-md animation animated-item-3" href="http://steamcommunity.com/groups/egsa" role="button" target="_blank">Where do I sign?</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div><!--/.item-->
+		            </div><!--/.carousel-inner-->
+		        </div><!--/.carousel-->
+		        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+		            <i class="icon-angle-left"></i>
+		        </a>
+		        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+		            <i class="icon-angle-right"></i>
+		        </a>
+		    </section><!--/#main-slider-->
 
-
-			<div class="row">
-				<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
-					<h1 id="about">Who we are?</h1>
-					<br/><br/>
-					<p>
-						EGSA stands for Epic Grooveshark Assembly. We are a group of lovely people from several countries who have many things in common: musical taste, video games, nostalgia, a deep and abiding love for many things caffeinated...
-						<br/><br/>
-						EGSA was founded at some forgotten, informal date between July and October 2013 after Nikke (a.k.a. the Unperturbed) couldn't host his "VGM Music" broadcast. A splinter broadcast was established to keep the music coming and the chats flowing. Once Nikke was back, the group stayed together, some members floating back and forth, but most of us staying put. Currently EGSA celebrates its anniversary on August 15. 
-						<br/><br/>
-						We have between 30 and 40 “members” from several countries across North and South America, Europe, and Asia.
-					</p>
-					<br/><br/>
-					<span class="glyphicon glyphicon-user"></span>&nbsp;<a href="{{ site.baseurl }}who/members/">Checkout the members list and self description here</a>
+			<section id="about" class="carrot">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+							<h1 id="about">Who we are?</h1>
+							<br><br>
+							<img class="egsa-logo" src="{{site.baseurl}}img/egsa-logo.png" alt="EGSA's Logo"/>
+							<p>
+								EGSA stands for Epic Grooveshark Assembly. We are a group of lovely people from several countries who have many things in common: musical taste, video games, nostalgia, a deep and abiding love for many things caffeinated...
+								<br><br>
+								EGSA was founded at some forgotten, informal date between July and October 2013 after Nikke (a.k.a. the Unperturbed) couldn't host his "VGM Music" broadcast. A splinter broadcast was established to keep the music coming and the chats flowing. Once Nikke was back, the group stayed together, some members floating back and forth, but most of us staying put. Currently EGSA celebrates its anniversary on August 15. 
+								<br><br>
+								We have between 30 and 40 “members” from several countries across North and South America, Europe, and Asia.
+							</p>
+							<br><br>
+							<span class="glyphicon glyphicon-user"></span>&nbsp;<a href="{{ site.baseurl }}who/members/">Checkout the members list and self description here</a>
+						</div>
+					</div>
 				</div>
-			</div>
+			</section>
 
 
 
-			<div id="contact" class="row row-small row-lightblue inverse">
-				<div class="col-md-3 col-md-offset-2 col-xs-offset-1 hidden-xs">
-					<img class="egsa-logo" src="{{site.baseurl}}img/egsa-logo.png" alt="EGSA's Logo"/>
+			<section id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+							<h2>10 reasons why you should join us</h2>
+							<ol>
+								<li>You will become awesome. You are already awesome? .. bullshit. You are not awesome 'til you join the EGSA.</li>
+								<li>You will get friends from different parts of the world, so hurray for vacations! I mean ... friendship, it's all about the friendship.</li>
+								<li>You will get awesome skills due to our multi-skilled team, including maths, science, coding, taxes, and riots.</li>
+								<li>You will learn multiple languages. "Herro!", "Oi!", "Hola!", "Huello!", "Ahoy!", isn't that cool?</li>
+								<li>Did I mention that you will become sexier?</li>
+								<li>You will play games. Tons of them.</li>
+								<li>Who knows? Maybe senpai will notice you.</li>
+								<li>Meh, who needs more reasons?</li>
+							</ol>
+							<br>
+							<p>
+								So, why are you waiting for? You want me to click the links for you? Come on!
+								<br>
+								<ul class="list-unstyled">
+									<li><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;<a href="http://grooveshark.com/#!/epicgroovesharkassembly/broadcast" target="_blank">Grooveshark: EGSA's Official Broadcast</a></li>
+									<li><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;<a href="http://grooveshark.com/#!/striker_arashi/broadcast" target="_blank">Grooveshark: Arashi's Broadcast - EGSA's featured broadcaster</a></li>
+									<li><span class="glyphicon glyphicon glyphicon-new-window"></span>&nbsp;<a href="http://epicgsa.tumblr.com/" target="_blank">Tumblr: epicgsa.tumblr.com</a></li>
+									<li><span class="glyphicon glyphicon glyphicon-new-window"></span>&nbsp;<a href="http://steamcommunity.com/groups/egsa" target="_blank">Steam Group: Epic Grooveshark Assembly</a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-5 col-xs-7">
-					<h2>10 reasons why you should join us</h2>
-					<ol>
-						<li>You will become awesome. You are already awesome? .. bullshit. You are not awesome 'til you join the EGSA.</li>
-						<li>You will get friends from different parts of the world, so hurray for vacations! I mean ... friendship, it's all about the friendship.</li>
-						<li>You will get awesome skills due to our multi-skilled team, including maths, science, coding, taxes, and riots.</li>
-						<li>You will learn multiple languages. "Herro!", "Oi!", "Hola!", "Huello!", "Ahoy!", isn't that cool?</li>
-						<li>Did I mention that you will become sexier?</li>
-						<li>You will play games. Tons of them.</li>
-						<li>Who knows? Maybe senpai will notice you.</li>
-						<li>Meh, who needs more reasons?</li>
-					</ol>
-					<br/>
-					<p>
-						So, why are you waiting for? You want me to click the links for you? Come on!
-						<br/>
-						<ul class="list-unstyled">
-							<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;E-mail: <a href="mailto:EGSA@mail.com">EGSA@mail.com</a></li>
-							<li><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;Grooveshark: <a href="http://grooveshark.com/#!/epicgroovesharkassembly/broadcast" target="_blank">EGSA's Official Broadcast</a></li>
-							<li><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;Grooveshark: <a href="http://grooveshark.com/#!/striker_arashi/broadcast" target="_blank">Arashi's Broadcast - EGSA's featured broadcaster</a></li>
-							<li><span class="glyphicon glyphicon glyphicon-new-window"></span>&nbsp;Tumblr: <a href="http://epicgsa.tumblr.com/" target="_blank">epicgsa.tumblr.com</a></li>
-							<li><span class="glyphicon glyphicon glyphicon-new-window"></span>&nbsp;Steam Group: <a href="http://steamcommunity.com/groups/egsa" target="_blank">Epic Grooveshark Assembly</a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
+			</section>
