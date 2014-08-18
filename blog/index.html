@@ -2,17 +2,34 @@
 layout: default
 title: Blog
 ---
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="page-header">
-                        <h1>Blog</h1>
-                    </div>
-                    <div class="list-group">
-                    {% for post in site.posts limit: 10 %}  
-
-                        <a class="list-group-item" href="{{post.url}}"><span class="glyphicon glyphicon-time"></span> {{ post.date | date:"%B %d, %Y" }}&nbsp;&middot;&nbsp;{{ post.title }}</a>
-
-                    {% endfor %}
+            <section id="title" class="carrot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Blog</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="breadcrumb pull-right">
+                                <li><a href="{{site.baseurl}}#">Home</a></li>
+                                <li class="active">Blog</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section><!--/#title-->
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="list-group">
+                            {% for post in site.posts limit: 10 %}  
+
+                                <a class="list-group-item" href="{{post.url}}"><span class="glyphicon glyphicon-time"></span> {{ post.date | date:"%B %d, %Y" }}&nbsp;&middot;&nbsp;{{ post.title }}</a>
+
+                            {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

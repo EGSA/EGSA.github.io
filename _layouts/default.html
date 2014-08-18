@@ -72,33 +72,17 @@
 	                <div class="col-md-3 col-sm-6">
 	                    <h4>Latest Blog</h4>
 	                    <div>
-	                        <div class="media">
-	                            <div class="pull-left">
-	                                <img src="images/blog/thumb1.jpg" alt="">
-	                            </div>
-	                            <div class="media-body">
-	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
-	                                <small class="muted">Posted 17 Aug 2013</small>
-	                            </div>
-	                        </div>
-	                        <div class="media">
-	                            <div class="pull-left">
-	                                <img src="images/blog/thumb2.jpg" alt="">
-	                            </div>
-	                            <div class="media-body">
-	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
-	                                <small class="muted">Posted 13 Sep 2013</small>
-	                            </div>
-	                        </div>
-	                        <div class="media">
-	                            <div class="pull-left">
-	                                <img src="images/blog/thumb3.jpg" alt="">
-	                            </div>
-	                            <div class="media-body">
-	                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
-	                                <small class="muted">Posted 11 Jul 2013</small>
-	                            </div>
-	                        </div>
+	                    	{% for post in site.posts limit: 3 %}
+		                        <div class="media">
+		                            <div class="pull-left">
+		                                <span class="glyphicon glyphicon-pencil"></span>
+		                            </div>
+		                            <div class="media-body">
+		                                <span class="media-heading"><a href="{{post.url}}">{{ post.title }}</a></span>
+		                                <small class="muted">Posted {{ post.date | date:"%B %d, %Y" }}</small>
+		                            </div>
+		                        </div>
+	                        {% endfor %}
 	                    </div>  
 	                </div><!--/.col-md-3-->
 
@@ -139,6 +123,13 @@
 		<script type="text/javascript" src="{{site.baseurl}}js/main.js"></script>
 		<script>
             function sendMail() {
+            	if ($('#fname').val() == '' ||
+            		$('#lname').val() == '' ||
+            		$('#cmail').val() == '' ||
+            		$('#message').val() == '') {
+            		return;
+            	}
+
                 $.ajax({
                     type: "POST",
                     url: "https://mandrillapp.com/api/1.0/messages/send.json",
@@ -169,7 +160,15 @@
 	                    }
                     }
                 }).done(function(response) {
-                	console.log(response); // if you're into that sorta thing
+                	if (response[0].status == 'sent') {
+                		$('.status').text('Message sent.');
+                		$('.status').addClass('alert-success');
+                		$('.status').css('display', 'block');
+                	} else {
+                		$('.status').text('Could not send the message, please try again.');
+                		$('.status').addClass('alert-danger');
+                		$('.status').css('display', 'block');
+                	}
                 });
             }
         </script>
