@@ -3,9 +3,9 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="description" content="EGSA Epic Grooveshark Assembly Webpage">
+	    <meta name="description" content="Epic Grooveshark Assembly Webpage, RIP Grooveshark">
 	    <meta name="author" content="Deku <github.com/Deku>">
-	    <title>{% if page.title %} {{ page.title }} | {% endif %} EGSA:EPIC_GROOVESHARK_ASSEMBLY</title>
+	    <title>{% if page.title %} {{ page.title }} | {% endif %} Epic GrooveShark Assembly</title>
 
 	    <link rel="stylesheet" href="{{site.baseurl}}css/bootstrap.min.css">
 	    <link rel="stylesheet" href="{{site.baseurl}}css/egsa-custom.css">
@@ -53,23 +53,19 @@
 	    <section id="bottom" class="navbar-inverse">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-md-3 col-sm-6">
-	                    <h4>About Us</h4>
-	                    <p>EGSA stands for Epic Grooveshark Assembly. We are a group of lovely people from several countries who have many things in common: musical taste, video games, nostalgia, a deep and abiding love for many things caffeinated... </p>
-	                </div><!--/.col-md-3-->
-
-	                <div class="col-md-3 col-sm-6">
+	                <div class="col-md-4 col-xs-12">
 	                    <h4>Links</h4>
 	                    <div>
 	                        <ul class="arrow">
-	                            <li><a href="http://grooveshark.com/#!/epicgroovesharkassembly/broadcast" target="_blank">Grooveshark</a></li>
+	                            <li><a href="https://discord.gg/JdNtubJ" target="_blank">Discord</a></li>
 	                            <li><a href="http://epicgsa.tumblr.com/" target="_blank">Tumblr</a></li>
 	                            <li><a href="http://steamcommunity.com/groups/egsa" target="_blank">Steam Group</a></li>
-	                        </ul>
+							</ul>
+							<p>R.I.P. Grooveshark, forever in our hearts.</p>
 	                    </div>
 	                </div><!--/.col-md-3-->
 
-	                <div class="col-md-3 col-sm-6">
+	                <div class="col-md-8 col-xs-12">
 	                    <h4>Latest Blog</h4>
 	                    <div>
 	                    	{% for post in site.posts limit: 3 %}
@@ -79,22 +75,12 @@
 		                            </div>
 		                            <div class="media-body">
 		                                <span class="media-heading"><a href="{{post.url}}">{{ post.title }}</a></span>
-		                                <small class="muted">Posted {{ post.date | date:"%B %d, %Y" }}</small>
+		                                <em class="muted">Posted on {{ post.date | date:"%B %d, %Y" }}</em>
 		                            </div>
 		                        </div>
 	                        {% endfor %}
 	                    </div>  
 	                </div><!--/.col-md-3-->
-
-	                <div class="col-md-3 col-sm-6">
-	                    <h4>Contact</h4>
-	                    <address>
-	                        EGSA@mail.com<br>
-	                        <strong>Devs</strong><br>
-	                        Deku: <a href="http://www.github.com/Deku">github.com/Deku</a><br>
-	                        Keith: <a href="http://www.github.com/Deku">github.com/karb0n13</a>
-	                    </address>
-	                </div> <!--/.col-md-3-->
 	            </div>
 	        </div>
 	    </section><!--/#bottom-->
@@ -103,7 +89,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
-	                    &copy; 2014 Epic Grooveshark Assembly. <strong>pls no copy pasterino</strong>. 
+	                    2014 - 2017 Epic Grooveshark Assembly. <strong>pls no copy pasterino</strong>. 
 	                </div>
 	                <div class="col-sm-6">
 	                    <ul class="pull-right">
@@ -121,56 +107,5 @@
 		<script type="text/javascript" src="{{site.baseurl}}js/jquery.prettyPhoto.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}js/jquery.isotope.min.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}js/main.js"></script>
-		<script>
-            function sendMail() {
-            	if ($('#fname').val() == '' ||
-            		$('#lname').val() == '' ||
-            		$('#cmail').val() == '' ||
-            		$('#message').val() == '') {
-            		return;
-            	}
-
-                $.ajax({
-                    type: "POST",
-                    url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                    data: {
-	                    'key': 'pJUXW9yAlOepYuEJkWVBJg',
-	                    'message': {
-	                      'from_email': 'EGSA@mail.com',
-	                      'to': [
-	                          {
-	                            'email': 'EGSA@mail.com',
-	                            'name': 'Epic Grooveshark Assembly',
-	                            'type': 'to'
-	                          },
-	                          {
-	                            'email': 'maangx@gmail.com',
-	                            'name': 'Deku',
-	                            'type': 'cc'
-	                          }
-	                        ],
-	                      'autotext': 'true',
-	                      'subject': 'EGSA Website Contact',
-	                      'html': 'Mail sent from Contact form at egsa.github.io <br> ----- <br>'
-	                      			+ 'First name: ' + $('#fname').val() + '<br>'
-	                      			+ 'Last name: ' + $('#lname').val()+ '<br>'
-	                      			+ 'Contact e-mail: ' + $('#cmail').val() + '<br><br>'
-	                      			+ '<br> ----- <br>Message: <br> ----- <br>'
-	                      			+ $('#message').val()
-	                    }
-                    }
-                }).done(function(response) {
-                	if (response[0].status == 'sent') {
-                		$('.status').text('Message sent.');
-                		$('.status').addClass('alert-success');
-                		$('.status').css('display', 'block');
-                	} else {
-                		$('.status').text('Could not send the message, please try again.');
-                		$('.status').addClass('alert-danger');
-                		$('.status').css('display', 'block');
-                	}
-                });
-            }
-        </script>
 	</body>
 </html>
